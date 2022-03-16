@@ -24,8 +24,6 @@ import me.filoghost.holographicdisplays.plugin.commands.subs.ListCommand;
 import me.filoghost.holographicdisplays.plugin.commands.subs.MoveHereCommand;
 import me.filoghost.holographicdisplays.plugin.commands.subs.NearCommand;
 import me.filoghost.holographicdisplays.plugin.commands.subs.QuickEditCommand;
-import me.filoghost.holographicdisplays.plugin.commands.subs.ReadImageCommand;
-import me.filoghost.holographicdisplays.plugin.commands.subs.ReadTextCommand;
 import me.filoghost.holographicdisplays.plugin.commands.subs.ReloadCommand;
 import me.filoghost.holographicdisplays.plugin.commands.subs.RemoveLineCommand;
 import me.filoghost.holographicdisplays.plugin.commands.subs.SetLineCommand;
@@ -74,8 +72,6 @@ public class HologramCommandManager extends SubCommandManager {
         subCommands.add(new RemoveLineCommand(this, hologramEditor));
         subCommands.add(new SetLineCommand(this, hologramEditor));
         subCommands.add(new InsertLineCommand(this, hologramEditor));
-        subCommands.add(new ReadTextCommand(hologramEditor));
-        subCommands.add(new ReadImageCommand(hologramEditor));
         subCommands.add(new InfoCommand(this, hologramEditor));
 
         subCommands.add(new DebugCommand());
